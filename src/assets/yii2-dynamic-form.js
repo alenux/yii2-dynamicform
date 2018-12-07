@@ -122,7 +122,7 @@
         var count = _count($elem, widgetOptions);
 
         if (count < widgetOptions.limit) {
-            $toclone = $(widgetOptions.widgetItem).first();
+            $toclone = $(widgetOptions.widgetItem).template;
             $newclone = $toclone.clone(false, false);
 
             if (widgetOptions.insertPosition === 'top') {
